@@ -63,8 +63,7 @@
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6">
 						<i class="fa fa-lock"></i>
-						<a href="forget_password.php"> Olvidó su contraseña? </a>
-					
+						
 					</div>
 					
 					<div class="col-xs-6 col-sm-6 col-md-6">

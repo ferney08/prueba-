@@ -69,6 +69,6 @@
     </div> <!-- /container -->
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/account.js"></script>    
-<?php require_once 'templates/footer.php';?>
+
 	
 

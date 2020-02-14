@@ -1,14 +1,10 @@
 var jumpToCode = (function init () {
-  // Classes of code we would like to highlight
   var missingCoverageClasses = [ '.cbranch-no', '.cstat-no', '.fstat-no' ];
 
-  // We don't want to select elements that are direct descendants of another match
-  var notSelector = ':not(' + missingCoverageClasses.join('):not(') + ') > '; // becomes `:not(a):not(b) > `
+  var notSelector = ':not(' + missingCoverageClasses.join('):not(') + ') > '; 
 
-  // Selecter that finds elements on the page to which we can jump
-  var selector = notSelector + missingCoverageClasses.join(', ' + notSelector); // becomes `:not(a):not(b) > a, :not(a):not(b) > b`
+  var selector = notSelector + missingCoverageClasses.join(', ' + notSelector); 
 
-  // The NodeList of matching elements
   var missingCoverageElements = document.querySelectorAll(selector);
 
   var currentIndex;
@@ -48,13 +44,13 @@ var jumpToCode = (function init () {
 
   return function jump(event) {
     switch (event.which) {
-      case 78: // n
-      case 74: // j
+      case 78: 
+      case 74: 
         goToNext();
         break;
-      case 66: // b
-      case 75: // k
-      case 80: // p
+      case 66: 
+      case 75: 
+      case 80: 
         goToPrevious();
         break;
     }
